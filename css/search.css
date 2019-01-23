@@ -1,0 +1,139 @@
+:root {
+    --form-main-color: gray;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container-header {
+    background-color: gray;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-footer {
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.items-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 45px;
+    width: 100%;
+}
+
+.items-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.items-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+}
+
+.item-header {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-header:hover {
+    cursor: pointer;
+}
+
+.item-body {
+    margin-bottom: 2%;
+}
+
+.icon-footer {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon {
+    height: 25px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e5d65;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.form-search {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    border: none;
+    flex-grow: 1;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-button {
+    background-color: white;
+    width: 45px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-button:hover {
+    background-color: aliceblue;
+}
+
+
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+    .title {
+      font-size: 100px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less */
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 10vw;
+    }
+  }
