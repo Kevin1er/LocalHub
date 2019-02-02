@@ -129,11 +129,43 @@ body {
     .title {
       font-size: 100px;
     }
-  }
+}
   
-  /* If the screen size is 600px wide or less */
-  @media screen and (max-width: 600px) {
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
     .title {
-      font-size: 10vw;
+        font-size: 10vw;
     }
-  }
+}
+
+
+.container-answers {
+    border: 1px solid grey;
+    background-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.ul-container {
+    list-style: none;
+    margin: 2.5%;
+    padding: 0;
+}
+
+.li-container {
+    background-color: white;
+    padding: 1%;
+}
+
+.title-header {
+    color: white;
+    position: absolute;
+    left: 15px;
+    font-size: 2vw;
+}
+
+.form-header-answer {
+    position: absolute;
+    left: 500px;
+}

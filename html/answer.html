@@ -14,6 +14,19 @@
     <div class="container-main">
         <div class="container-header">
             <div class="items-header">
+                <div class="title-header">Le Chambon-sur-Lignon</div>
+                <div class="form-header form-header-answer">
+                    <form action="">
+                        <div id="form" class="form">
+                            <input id="search" class="form-search" type="search" name="question" onfocus="searchFocus()" onblur="searchBlur()" onmouseover="searchOver()" onmouseout="searchOut()" placeholder="Entrez une question ...">
+                            <input class="form-button" type="submit" value="➔">
+                            <script type="text/javascript">
+                                var a = document.getElementById("search");
+                                a.value = findGetParameter("question");
+                            </script>
+                        </div>
+                    </form>
+                </div>
                 <div class="item-header" onmouseover="langOver()" onmouseout="langOut()" onclick="langClick()">
                     <div class="lang">
                         <img id="lang-icon" class="icon" src="../ressources/fr.png" alt="fr">
@@ -21,23 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-body">
-            <form class="items-body" action="answer.html" method="GET"> 
-            <div class="items-body">
-                <div class="item-body">
-                    <div class="title">
-                        LocalHub
-                    </div>
-                </div>
-                <div class="item-body">
-                    <div id="form" class="form">
-                        <input id="search" class="form-search" type="search" name="question" onfocus="searchFocus()" onblur="searchBlur()" onmouseover="searchOver()" onmouseout="searchOut()" placeholder="Entrez une question ...">
-                        <input class="form-button" type="submit" value="➔">
-                    </div>
-                </div>
-            </div>
-            </form>
-        </div>
+        <div id="container-vue"></div>
         <div class="container-footer">
             <div class="items-footer">
                 <div class="item-footer">
