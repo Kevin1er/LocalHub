@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>File import</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/file-import.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/search.css">
+    <script src="../js/lib/simple-excel.js"></script>
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-header">
+            <div class="items-header">
+                <div class="item-header" onmouseover="langOver()" onmouseout="langOut()" onclick="langClick()">
+                    <div class="lang">
+                        <img id="lang-icon" class="icon" src="../ressources/fr.png" alt="fr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-body">
+            <div class="items-body">
+                <div class="item-body">
+                    <div class="drop-zone">
+                        Déposez un document
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="inputs-import">
+                        <label for="fileInput" class="label-file">Choisir un document</label>
+                        <input type="file" name="File" id="fileInput">
+                        <input type="button" value="Valider" class="label-file">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="items-footer">
+                <div class="item-footer">
+                    <div class="ujm">
+                        <a href="https://laboratoirehubertcurien.univ-st-etienne.fr/en/teams/connected-intelligence.html" target="blank">
+                            <img class="icon-footer" src="../ressources/ujm.png" alt="ujm">
+                        </a>
+                    </div>
+                </div>
+                <div class="item-footer">
+                    <div class="chambon">
+                        <a href="https://www.ville-lechambonsurlignon.fr/" target="blank">
+                            <img class="icon-footer" src="../ressources/Blason_Chambon-sur-Lignon.svg" alt="Chambon-sur-Lignon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/fileImport.js"></script>
+</body>
+</html>
