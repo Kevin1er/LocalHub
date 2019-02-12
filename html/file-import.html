@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/file-import.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/search.css">
     <script src="../js/lib/simple-excel.js"></script>
+    <script src="../js/lib/jquery-3.3.1.js"></script>
 </head>
 <body>
     <div class="container-main">
@@ -23,7 +24,7 @@
         <div class="container-body">
             <div class="items-body">
                 <div class="item-body">
-                    <div class="drop-zone">
+                    <div class="drop-zone" id="dropZoneInput">
                         Déposez un document
                     </div>
                 </div>
@@ -31,7 +32,12 @@
                     <div class="inputs-import">
                         <label for="fileInput" class="label-file">Choisir un document</label>
                         <input type="file" name="File" id="fileInput">
-                        <input type="button" value="Valider" class="label-file">
+                        <button class="label-file">Valider</button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="input-scan">
+                        <button class="label-file" onclick="scanTest()">Scan - Test</button>
                     </div>
                 </div>
             </div>
