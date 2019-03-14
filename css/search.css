@@ -1,6 +1,5 @@
 :root {
     --form-main-color: gray;
-
 }
 
 body {
@@ -26,7 +25,7 @@ body {
 
 .container-footer {
     background-color: #333333;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -125,19 +124,21 @@ body {
 
 
 /* If the screen size is 601px wide or more */
+
 @media screen and (min-width: 601px) {
     .title {
-      font-size: 100px;
+        font-size: 100px;
     }
 }
-  
+
+
 /* If the screen size is 600px wide or less */
+
 @media screen and (max-width: 600px) {
     .title {
         font-size: 10vw;
     }
 }
-
 
 .container-answers {
     border: 1px solid grey;
